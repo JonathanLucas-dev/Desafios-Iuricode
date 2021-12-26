@@ -1,0 +1,19 @@
+header {
+  background-color: wheat; }
+
+.container {
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  padding: 10px;
+  width: 80%; }
+  .container .containerLogo {
+    width: 20%; }
+  .container .containerMenu {
+    width: 80%; }
+    .container .containerMenu ul {
+      display: flex;
+      justify-content: end; }
+      .container .containerMenu ul li {
+        list-style: none;
+        margin-right: 20px; }
