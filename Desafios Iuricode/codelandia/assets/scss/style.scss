@@ -1,29 +1,221 @@
-header{
-    background-color: wheat;
+// VARIAVEIS
+$base-color: #F7C7B9;  
+$btn-color: #DA2535;
+$black-light: #161212;
+$grey: #8D8D8D;
+
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../font/Poppins/Poppins-Medium.ttf') format("TrueType");
+    font-weight: 500;
+    font-style: normal;
 }
 
+*{
+    font-family: 'Poppins', sans-serif !important;
+}
+
+h2 {
+    color: $black-light;
+    font-size: 48px;
+    line-height: 52px;
+    font-weight: 600;
+}
+
+p{
+    color: $black-light;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+}
+
+.btn{
+    background-color: $btn-color;
+    border-radius: 8px;
+    border: none;
+    box-shadow: none;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+    color: white;
+    font-family: "Poppin";
+    font-size: 16px;
+    line-height: 24px;
+    
+    padding: 10px 25px;
+
+    img{
+        margin-right: 10px;
+    }
+}
+
+
+
 .container{
+    align-items: center;
+
     display: flex;
     margin: 0 auto;
     justify-content: space-between;
     padding: 10px;
     width: 80%;
+}
 
-    .containerLogo{
-        width: 20%;
+header{
+    background-color: $base-color;
+
+    .headerLogo{
+        align-items: center;
+        display: flex;
+        width: 30%;
+
+        P {
+            font-size: 24px;
+            line-height: 36px;
+            margin-left: 15px !important;
+        }
     }
 
-    .containerMenu{ 
-        width: 80%;
-    
+    .headerMenu{ 
+        width: 70%;
+
         ul {
             display: flex;
             justify-content: end;
 
             li{
                 list-style: none;
-                margin-right: 20px;
+                margin-left: 25px;
+
+                a{
+                    text-decoration: none;
+                    color:$black-light ;
+                }
             }
         }
     }
 }
+
+aside{
+
+    .asideTop {
+        background-color: $base-color;
+        
+        display: flex;
+        align-items: center;
+
+        height: 91vh;
+        margin: 0 auto;
+
+        .container{
+            width: 80%;
+
+            div{
+                margin: auto;
+                
+                height: 100%;
+                width: 50%;
+            }
+            
+            p{
+                margin: 24px 0 52px 0;
+            }
+        }
+    }
+
+    .asideAcessorios{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        height: 100vh;
+
+        .acessoriosTitulo{
+            text-align: center;
+            padding: 0 0 35px 0;
+
+            p{
+                margin-top: 25px;
+            }
+        }
+
+        .acessoriosSection {
+            display: flex;
+            justify-content: space-between;
+
+            margin: 0 auto !important;
+
+            width: 80%;
+
+            section{
+                width: 33,3%;
+
+                h3{
+                    text-align: center;
+                    color: $black-light;
+                    font-size: 20px;
+                    line-height: 30px;
+                }
+
+                p{
+                    color: $grey;
+                    font-size: 16px;
+                    text-align: center;
+
+                    margin-top: 12px;
+                }
+            }
+        }
+    }
+
+    .asideDown{
+        align-items: center;
+        display: flex;
+
+        margin: 0 auto !important;
+
+        height: 100vh;
+        background-color: $base-color;
+
+        p{
+            margin: 24px 0 52px 0;
+        }
+    }
+}
+
+footer{
+    height: 50px;
+    .footerLogo{
+        align-items: center;
+        display: flex;
+        width: 30%;
+
+        P {
+            font-size: 24px;
+            line-height: 36px;
+            margin-left: 15px !important;
+        }
+    }
+
+    .footerSocial{
+        ul {
+            display: flex;
+            justify-content: end;
+
+            li{
+                background-color: $base-color;
+                border-radius: 100px;
+
+                padding: 5px;
+
+                list-style: none;
+                margin-left: 25px;
+
+            }
+        }
+    }
+}
+
