@@ -99,9 +99,9 @@ header{
     }
 }
 
-aside{
+main{
 
-    .asideTop {
+    .mainTop {
         background-color: $base-color;
         
         display: flex;
@@ -126,7 +126,7 @@ aside{
         }
     }
 
-    .asideAcessorios{
+    .mainAcessorios{
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -171,7 +171,7 @@ aside{
         }
     }
 
-    .asideDown{
+    .mainDown{
         align-items: center;
         display: flex;
 

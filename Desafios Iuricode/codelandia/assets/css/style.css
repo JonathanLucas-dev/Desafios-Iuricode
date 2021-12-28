@@ -65,56 +65,56 @@ header {
           text-decoration: none;
           color: #161212; }
 
-aside .asideTop {
+main .mainTop {
   background-color: #F7C7B9;
   display: flex;
   align-items: center;
   height: 91vh;
   margin: 0 auto; }
-  aside .asideTop .container {
+  main .mainTop .container {
     width: 80%; }
-    aside .asideTop .container div {
+    main .mainTop .container div {
       margin: auto;
       height: 100%;
       width: 50%; }
-    aside .asideTop .container p {
+    main .mainTop .container p {
       margin: 24px 0 52px 0; }
 
-aside .asideAcessorios {
+main .mainAcessorios {
   display: flex;
   flex-direction: column;
   justify-content: center;
   height: 100vh; }
-  aside .asideAcessorios .acessoriosTitulo {
+  main .mainAcessorios .acessoriosTitulo {
     text-align: center;
     padding: 0 0 35px 0; }
-    aside .asideAcessorios .acessoriosTitulo p {
+    main .mainAcessorios .acessoriosTitulo p {
       margin-top: 25px; }
-  aside .asideAcessorios .acessoriosSection {
+  main .mainAcessorios .acessoriosSection {
     display: flex;
     justify-content: space-between;
     margin: 0 auto !important;
     width: 80%; }
-    aside .asideAcessorios .acessoriosSection section {
+    main .mainAcessorios .acessoriosSection section {
       width: 33,3%; }
-      aside .asideAcessorios .acessoriosSection section h3 {
+      main .mainAcessorios .acessoriosSection section h3 {
         text-align: center;
         color: #161212;
         font-size: 20px;
         line-height: 30px; }
-      aside .asideAcessorios .acessoriosSection section p {
+      main .mainAcessorios .acessoriosSection section p {
         color: #8D8D8D;
         font-size: 16px;
         text-align: center;
         margin-top: 12px; }
 
-aside .asideDown {
+main .mainDown {
   align-items: center;
   display: flex;
   margin: 0 auto !important;
   height: 100vh;
   background-color: #F7C7B9; }
-  aside .asideDown p {
+  main .mainDown p {
     margin: 24px 0 52px 0; }
 
 footer {
