@@ -6,12 +6,12 @@
 body {
   background: linear-gradient(130.02deg, #628E75 0.66%, #1A4855 83.32%);
   font-family: "Poppins" !important;
-  color: #f9f9f9;
-  height: 100vh; }
+  color: #f9f9f9; }
 
 .container {
   display: flex;
-  width: 80%;
+  flex-wrap: wrap;
+  width: 90%;
   margin: 0 auto; }
 
 header nav {
@@ -31,9 +31,10 @@ header nav {
 main .mainTitulo {
   display: flex;
   flex-direction: column;
-  justify-content: center; }
+  justify-content: center;
+  flex: 1; }
   main .mainTitulo h3 {
-    font-size: 20px;
+    font-size: 1.2em;
     line-height: 30px;
     letter-spacing: 0.03em;
     margin-bottom: 15px; }
@@ -45,46 +46,56 @@ main .mainTitulo {
     font-size: 16px;
     font-weight: 200;
     line-height: 180%;
-    margin: 25px 0 55px 0; }
-  main .mainTitulo .mainImg {
-    display: flex;
-    align-items: flex-end; }
+    margin: 25px 0 40px 0; }
   main .mainTitulo .mainBtn {
     display: flex; }
     main .mainTitulo .mainBtn .btn {
-      width: 225px;
-      height: 45px;
-      transform: skew(-20deg);
-      font-weight: 500;
-      font-size: 16px;
-      position: relative;
-      float: left;
-      margin-right: 20px;
-      border: 2px solid #658E76;
-      cursor: pointer; }
-      main .mainTitulo .mainBtn .btn .divBtn {
-        width: 160px;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        text-align: center;
-        transform: translate(-50%, -50%) skew(20deg); }
-    main .mainTitulo .mainBtn .btnAssista {
       display: flex;
-      justify-content: center;
-      align-items: center;
-      background: #658E76;
-      width: 225px;
-      height: 45px;
-      transform: skew(-20deg); }
-      main .mainTitulo .mainBtn .btnAssista span {
+      font-weight: 600;
+      font-size: 16px;
+      font-family: "Poppins";
+      margin-right: 20px;
+      transform: skew(-30deg); }
+      main .mainTitulo .mainBtn .btn a {
         display: flex;
-        align-items: center; }
-      main .mainTitulo .mainBtn .btnAssista a {
-        margin-left: 10px; }
-    main .mainTitulo .mainBtn .btnTrailer {
-      background-color: #658e7600;
-      width: 225px;
-      height: 45px;
-      margin-left: 20px;
-      transform: skew(-20deg); }
+        justify-content: center;
+        align-items: center;
+        text-decoration: none; }
+      main .mainTitulo .mainBtn .btn .btnAssista {
+        background-color: #658E76;
+        padding: .5rem 1rem;
+        cursor: pointer;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid #658E76; }
+        main .mainTitulo .mainBtn .btn .btnAssista span {
+          display: flex;
+          align-items: center;
+          transform: skew(30deg); }
+        main .mainTitulo .mainBtn .btn .btnAssista img {
+          margin-right: 5px;
+          width: 15px; }
+      main .mainTitulo .mainBtn .btn .btnAssista:hover {
+        background-color: #ffffff00; }
+      main .mainTitulo .mainBtn .btn .btnTrailer {
+        background-color: #ffffff00;
+        padding: .5rem 1rem;
+        cursor: pointer;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid #658E76; }
+        main .mainTitulo .mainBtn .btn .btnTrailer span {
+          display: flex;
+          align-items: center;
+          transform: skew(30deg); }
+      main .mainTitulo .mainBtn .btn .btnTrailer:hover {
+        background-color: #658E76 !important; }
+
+main .mainImg {
+  display: flex;
+  align-items: flex-end;
+  flex: 1; }
