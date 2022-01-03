@@ -53,7 +53,6 @@ main .mainTitulo {
       display: flex;
       font-weight: 600;
       font-size: 16px;
-      font-family: "Poppins";
       margin-right: 20px;
       transform: skew(-30deg); }
       main .mainTitulo .mainBtn .btn a {
@@ -73,7 +72,8 @@ main .mainTitulo {
         main .mainTitulo .mainBtn .btn .btnAssista span {
           display: flex;
           align-items: center;
-          transform: skew(30deg); }
+          transform: skew(30deg);
+          font-family: "Poppins"; }
         main .mainTitulo .mainBtn .btn .btnAssista img {
           margin-right: 5px;
           width: 15px; }
@@ -91,7 +91,8 @@ main .mainTitulo {
         main .mainTitulo .mainBtn .btn .btnTrailer span {
           display: flex;
           align-items: center;
-          transform: skew(30deg); }
+          transform: skew(30deg);
+          font-family: "Poppins"; }
       main .mainTitulo .mainBtn .btn .btnTrailer:hover {
         background-color: #658E76 !important; }
 
