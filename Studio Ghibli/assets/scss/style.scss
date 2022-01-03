@@ -7,6 +7,7 @@ $back-gradient: linear-gradient(130.02deg, #628E75 0.66%, #1A4855 83.32%);
     font-weight: 500;
 }
 
+
 body{
     background: $back-gradient;
 
@@ -60,12 +61,14 @@ main{
             line-height: 30px;
             letter-spacing: 0.03em;
             margin-bottom: 15px;
+            text-shadow: 3px 4px 7px rgb(70, 67, 67);
         }
 
         h2{
             font-size: 68px;
             font-weight: 900;
             line-height: 109%;
+            text-shadow: 3px 4px 7px rgb(70, 67, 67);
         }
 
         p{
@@ -73,6 +76,7 @@ main{
             font-weight: 200;
             line-height: 180%;
             margin: 25px 0 40px 0;
+            text-shadow: 3px 4px 7px rgb(70, 67, 67);
         }
 
         .mainBtn{
@@ -165,5 +169,182 @@ main{
         display: flex;
         align-items: flex-end;
         flex: 1;
+    }
+}
+
+// LAPTOP/DESKTOPS, 992px
+@media (max-width: 992px)
+{
+  
+  main {
+      .mainTitulo{
+          width: 50%;
+
+
+          h3{
+            font-size: 1em;
+        }
+
+        h2{
+            font-size: 54px;
+        }
+
+        p{
+            font-size: 14px;
+        }
+      }
+
+      .mainImg {
+          width: 50%;
+
+          img{
+              width: 100%;
+          }
+      }
+  }
+}
+
+// TABLET, 768px
+@media (max-width: 768px)
+{
+  
+    main {
+
+        .container{
+            padding: 50px 0;
+        }
+
+        .mainTitulo{
+            width: 50%;
+
+
+            h3{
+                font-size: .8em;
+            }
+
+            h2{
+                font-size: 48px;
+            }
+
+            p{
+                font-size: 12px;
+            }
+
+            .mainBtn{
+
+                .btn{
+    
+                    font-size: 12px;
+    
+                    .btnAssista{
+                       
+                        border: 1px solid #658E76;
+                        padding: .5rem .5rem;
+    
+        
+                        img{
+
+                            margin-right: 5px;
+                            width: 15px;
+
+                        }
+        
+                    }
+        
+                    .btnTrailer{
+
+                        border: 1px solid #658E76;
+                        padding: .5rem .5rem;
+                    }
+                }
+    
+            }
+        }
+
+        .mainImg {
+
+            width: 50%;
+
+            img{
+
+                width: 100%;
+
+            }
+        }
+    }
+}
+
+// CELULAR, 600px
+@media (max-width: 600px)
+{
+  
+    main {
+
+        .container{
+            background-image: url("../img/noface.png");
+            background-position: center;
+            background-size: cover;
+            padding: 50px 0;
+        }
+
+        .mainTitulo{
+
+            text-align: center;
+            width: 100%;
+
+
+            h3{
+                font-size: .8em;
+            }
+
+            h2{
+                font-size: 48px;
+            }
+
+            p{
+                font-size: 12px;
+            }
+
+            .mainBtn{
+
+                align-items: center;
+                justify-content: center;
+
+                .btn{
+    
+                    font-size: 12px;
+    
+                    .btnAssista{
+                        
+                        font-size: 12px;
+                        border: 1px solid #658E76;
+                        padding: .5rem 1rem;
+        
+                        img{
+
+                            margin-right: 5px;
+                            width: 15px;
+
+                        }
+        
+                    }
+        
+                    .btnTrailer{
+
+                        font-size: 12px;
+                        padding: .5rem 1rem;
+                        border: 1px solid #658E76;
+
+                    }
+                }
+    
+            }
+        }
+
+        .mainImg {
+
+            display: none;
+
+        }
     }
 }

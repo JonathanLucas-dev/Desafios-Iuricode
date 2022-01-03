@@ -37,16 +37,19 @@ main .mainTitulo {
     font-size: 1.2em;
     line-height: 30px;
     letter-spacing: 0.03em;
-    margin-bottom: 15px; }
+    margin-bottom: 15px;
+    text-shadow: 3px 4px 7px #464343; }
   main .mainTitulo h2 {
     font-size: 68px;
     font-weight: 900;
-    line-height: 109%; }
+    line-height: 109%;
+    text-shadow: 3px 4px 7px #464343; }
   main .mainTitulo p {
     font-size: 16px;
     font-weight: 200;
     line-height: 180%;
-    margin: 25px 0 40px 0; }
+    margin: 25px 0 40px 0;
+    text-shadow: 3px 4px 7px #464343; }
   main .mainTitulo .mainBtn {
     display: flex; }
     main .mainTitulo .mainBtn .btn {
@@ -100,3 +103,78 @@ main .mainImg {
   display: flex;
   align-items: flex-end;
   flex: 1; }
+
+@media (max-width: 992px) {
+  main .mainTitulo {
+    width: 50%; }
+    main .mainTitulo h3 {
+      font-size: 1em; }
+    main .mainTitulo h2 {
+      font-size: 54px; }
+    main .mainTitulo p {
+      font-size: 14px; }
+  main .mainImg {
+    width: 50%; }
+    main .mainImg img {
+      width: 100%; } }
+
+@media (max-width: 768px) {
+  main .container {
+    padding: 50px 0; }
+  main .mainTitulo {
+    width: 50%; }
+    main .mainTitulo h3 {
+      font-size: .8em; }
+    main .mainTitulo h2 {
+      font-size: 48px; }
+    main .mainTitulo p {
+      font-size: 12px; }
+    main .mainTitulo .mainBtn .btn {
+      font-size: 12px; }
+      main .mainTitulo .mainBtn .btn .btnAssista {
+        border: 1px solid #658E76;
+        padding: .5rem .5rem; }
+        main .mainTitulo .mainBtn .btn .btnAssista img {
+          margin-right: 5px;
+          width: 15px; }
+      main .mainTitulo .mainBtn .btn .btnTrailer {
+        border: 1px solid #658E76;
+        padding: .5rem .5rem; }
+  main .mainImg {
+    width: 50%; }
+    main .mainImg img {
+      width: 100%; } }
+
+@media (max-width: 600px) {
+  main .container {
+    background-image: url("../img/noface.png");
+    background-position: center;
+    background-size: cover;
+    padding: 50px 0; }
+  main .mainTitulo {
+    text-align: center;
+    width: 100%; }
+    main .mainTitulo h3 {
+      font-size: .8em; }
+    main .mainTitulo h2 {
+      font-size: 48px; }
+    main .mainTitulo p {
+      font-size: 12px; }
+    main .mainTitulo .mainBtn {
+      align-items: center;
+      justify-content: center; }
+      main .mainTitulo .mainBtn .btn {
+        font-size: 12px; }
+        main .mainTitulo .mainBtn .btn .btnAssista {
+          font-size: 12px;
+          border: 1px solid #658E76;
+          padding: .5rem 1rem; }
+          main .mainTitulo .mainBtn .btn .btnAssista img {
+            margin-right: 5px;
+            width: 15px; }
+        main .mainTitulo .mainBtn .btn .btnTrailer {
+          font-size: 12px;
+          padding: .5rem 1rem;
+          border: 1px solid #658E76; }
+  main .mainImg {
+    display: none; } }
