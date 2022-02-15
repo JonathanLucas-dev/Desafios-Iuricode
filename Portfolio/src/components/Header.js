@@ -13,116 +13,116 @@ const Header = () => {
 
     const defaultOptions = {
         loop: true,
-        autoplay: true, 
+        autoplay: true,
         animationData: animationData,
         rendererSettings: {
-          preserveAspectRatio: 'xMidYMid slice'
+            preserveAspectRatio: 'xMidYMid slice'
         }
-      };
-      
+    };
+
     return (
         <Box
-        as="div"
+            as="div"
         >
-            <Menu/>
+            <Menu />
 
             <Box
-            as="div"
-            styleSheet={{
-                margin: '0 auto',
-                width: '940px',
-                display: 'flex',
-                justifyContent: 'space-between',
-                alignItems: 'center',
-                height: '85vh'
-            }}
+                as="div"
+                styleSheet={{
+                    margin: '0 auto',
+                    width: '940px',
+                    display: 'flex',
+                    justifyContent: 'space-between',
+                    alignItems: 'center',
+                    height: '90vh'
+                }}
             >
 
                 <Box
-                as="div"
-                styleSheet={{
-                    width: '50%',
-                }}
+                    as="div"
+                    styleSheet={{
+                        width: '50%',
+                    }}
                 >
                     <Text
-                    as="h2"
-                    styleSheet={{
-                        color: '#fff',
-                        fontSize: '36px',
-                        fontWeight: 'bold'
-                    }}>
+                        as="h2"
+                        styleSheet={{
+                            color: '#fff',
+                            fontSize: '36px',
+                            fontWeight: 'bold'
+                        }}>
                         Olá, eu sou o <br />
                         Jonathan Lucas
                     </Text>
                     <Text
-                    as="p"
-                    styleSheet={{
-                        marginTop: '20px',
-                        color: '#828282',
-                        fontSize: '18px'
-                    }}>
+                        as="p"
+                        styleSheet={{
+                            marginTop: '20px',
+                            color: '#828282',
+                            fontSize: '18px'
+                        }}>
                         Desenvolvedor Front-End
                     </Text>
 
                     <Box
-                    as='div'
-                    styleSheet={{
-                        display: 'flex',
-                        marginTop: '20px'
-                    }}
+                        as='div'
+                        styleSheet={{
+                            display: 'flex',
+                            marginTop: '20px'
+                        }}
                     >
-                        <Button 
-                        iconName="github"
-                        label="GitHub"
-                        href='https://github.com/JonathanAssis'
-                        styleSheet={{
-                            marginRight: '20px',
-                            backgroundColor: '#7132DB',
+                        <Button
+                            iconName="github"
+                            label="GitHub"
+                            href='https://github.com/JonathanAssis'
+                            styleSheet={{
+                                marginRight: '20px',
+                                backgroundColor: '#7132DB',
 
-                            hover : {
-                                backgroundColor: '#6112eb',
-                            },
+                                hover: {
+                                    backgroundColor: '#6112eb',
+                                },
 
-                            focus : {
-                                backgroundColor: '#6112eb',
-                            }
-                        }}
+                                focus: {
+                                    backgroundColor: '#6112eb',
+                                }
+                            }}
                         />
 
-                        <Button 
-                        iconName="linkedin"
-                        label="Linkedin"
-                        href='https://www.linkedin.com/in/jonathan-lucas-3834551b3/'
-                        styleSheet={{
-                            backgroundColor: '#7132DB',
+                        <Button
+                            iconName="linkedin"
+                            label="Linkedin"
+                            href='https://www.linkedin.com/in/jonathan-lucas-3834551b3/'
+                            styleSheet={{
+                                backgroundColor: '#7132DB',
 
-                            hover : {
-                                backgroundColor: '#6112eb',
-                            },
+                                hover: {
+                                    backgroundColor: '#6112eb',
+                                },
 
-                            focus : {
-                                backgroundColor: '#6112eb',
-                            }
-                        }}
+                                focus: {
+                                    backgroundColor: '#6112eb',
+                                }
+                            }}
                         />
-                       
+
                     </Box>
-             
+
 
                 </Box>
 
                 <Box
-                as="div"
-                styleSheet={{
-                    width: '50%'
-                }}
-                >
-                    <Lottie 
-                    style={{
-                        marginLeft: 'auto',
-                        marginRight: '-100px'
+                    as="div"
+                    styleSheet={{
+                        width: '50%'
                     }}
-                    options={defaultOptions}
+                >
+                    <Lottie
+                        style={{
+                            marginLeft: 'auto',
+                            marginRight: '-100px'
+                        }}
+                        options={defaultOptions}
                         height={500}
                         width={500}
                         isStopped={animationState.isStopped}
