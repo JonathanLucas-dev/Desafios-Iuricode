@@ -143,33 +143,6 @@ export const Sobre = () => {
           </Emojis>
 
           <Emojis
-            iconName="PhoneAlt"
-          >
-            <Text
-              as='h3'
-              styleSheet={{
-                color: '#f9f9f9',
-                fontSize: '14px',
-                fontWeight: '700',
-                margin: '10px 0',
-                lineHeight: '24px'
-              }}
-            >
-              Telefone
-            </Text>
-
-            <Text
-              as='p'
-              styleSheet={{
-                color: '#828282',
-                fontSize: '12px',
-              }}
-            >
-              (11)99999-9999
-            </Text>
-          </Emojis>
-
-          <Emojis
             iconName="wordpress"
             href='https://newstep.com.br/'
 

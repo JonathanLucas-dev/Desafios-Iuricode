@@ -7,8 +7,26 @@ export default function Projetos() {
   return (
     <>
       <Box
+      >
+        <Text
+          as='h2'
+          styleSheet={{
+            textAlign: 'center',
+            color: '#F9F9F9',
+            fontSize: '32px',
+            margin: '25px auto',
+            fontWeight: 'bold'
+
+          }}
+        >
+
+          Projetos
+
+        </Text>
+      </Box>
+
+      <Box
         styleSheet={{
-          margin: '0px 20px',
           display: 'flex',
           margin: '20px auto'
         }}
@@ -55,7 +73,6 @@ export default function Projetos() {
 
       <Box
         styleSheet={{
-          margin: '0px 20px',
           display: 'flex',
           margin: '20px auto'
         }}
