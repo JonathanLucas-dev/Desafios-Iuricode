@@ -2,7 +2,7 @@ import React from 'react';
 import Menu from './Menu';
 import { Box, Button, Text, TextField, Image } from '@skynexui/components';
 import Lottie from 'react-lottie';
-import animationData from '../animations/DevAnimation.json';
+import animationData from '../../animations/DevAnimation.json';
 
 
 

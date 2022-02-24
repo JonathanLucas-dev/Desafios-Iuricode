@@ -1,6 +1,7 @@
 import react from "react";
-import Header from "../src/components/Header";
-import { Sobre } from '../src/components/Sobre';
+import Header from "../src/components/header/Header";
+import Projetos from '../src/components/projetos/Projetos';
+import { Sobre } from '../src/components/sobre/Sobre';
 
 const App = () => {
     return (
@@ -12,6 +13,7 @@ const App = () => {
         >
             <Header />
             <Sobre />
+            <Projetos />
         </ div>
 
     )
