@@ -1,6 +1,6 @@
-import React from 'react'
-import { Box, Text, Button } from '@skynexui/components';
-
+/* eslint-disable react/prop-types */
+import React from 'react';
+import { Button } from '@skynexui/components';
 
 export const Emojis = (props) => {
   return (
@@ -21,11 +21,10 @@ export const Emojis = (props) => {
           focus: {
             color: '#7132DB',
             backgroundColor: '#212121',
-          }
+          },
         }}
-      >
-      </Button>
+      ></Button>
       {props.children}
-    </div >
-  )
-}
+    </div>
+  );
+};
